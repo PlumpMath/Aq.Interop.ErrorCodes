@@ -1,0 +1,67 @@
+﻿{
+  "version": "0.0.1-*",
+
+  "title": "Aq.Interop.ErrorCodes",
+  "authors": [
+    "Ilya \"aq\" Kozlov"
+  ],
+  "description": "OS-specific error codes for .NET",
+
+  "packOptions": {
+    "projectUrl": "https://github.com/aquilae/Aq.Interop.ErrorCodes",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aquilae/Aq.Interop.ErrorCodes"
+    },
+    "summary": "OS-specific error codes for .NET",
+    "licenseUrl": "https://github.com/aquilae/Aq.Interop.ErrorCodes/blob/master/LICENSE",
+    "owners": [
+      "Ilya \"aq\" Kozlov"
+    ],
+    "tags": [
+      "P/Invoke",
+      "Platform"
+    ]
+  },
+
+  "configurations": {
+    "Debug": {
+      "buildOptions": {
+        "define": [
+          "DEBUG",
+          "TRACE"
+        ],
+        "optimize": false,
+        "warningsAsErrors": true
+      }
+    },
+    "Release": {
+      "buildOptions": {
+        "define": [
+          "RELEASE"
+        ],
+        "optimize": true,
+        "warningsAsErrors": true
+      }
+    }
+  },
+
+  "dependencies": {
+  },
+
+  "frameworks": {
+    "net1": {
+    },
+    "netstandard1.1": {
+      "imports": "dnxcore50",
+      "buildOptions": {
+        "define": [
+          "CORECLR"
+        ]
+      },
+      "dependencies": {
+        "NETStandard.Library": "1.1"
+      }
+    }
+  }
+}
